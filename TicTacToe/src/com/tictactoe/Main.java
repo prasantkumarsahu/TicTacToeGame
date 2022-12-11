@@ -4,7 +4,7 @@ public class Main {
 	public static void main(String[] args) {
 		Player p1 = new Player();
 		p1.setName("A");
-		p1.setSymbol('0');
+		p1.setSymbol('O');
 
 		Player p2 = new Player();
 		p2.setName("B");

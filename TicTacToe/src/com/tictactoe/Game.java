@@ -24,7 +24,7 @@ public class Game {
 		StringBuilder c = new StringBuilder();
 
 		for (int i = 0; i < board.size; i++) {
-			z.append('0');
+			z.append('O');
 			c.append('X');
 		}
 
@@ -35,7 +35,7 @@ public class Game {
 	public void printBoard() {
 		for (int i = 0; i < board.size; i++) {
 			for (int j = 0; j < board.size; j++) {
-				System.out.print(board.board[i][j]);
+				System.out.print(board.board[i][j] + " ");
 			}
 
 			System.out.println();
