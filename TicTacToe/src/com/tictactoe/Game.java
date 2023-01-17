@@ -61,7 +61,7 @@ public class Game {
 				return;
 			}
 
-			if (noOfMoves >= 2 * n - 1 && checkCombinations()) {
+			if (noOfMoves > 2 * n - 2 && checkCombinations()) {
 				gameOver = true;
 				System.out.println("Winner is " + players[turn].getName());
 			}
