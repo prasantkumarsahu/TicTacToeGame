@@ -24,8 +24,8 @@ public class Game {
 		StringBuilder c = new StringBuilder();
 
 		for (int i = 0; i < board.size; i++) {
-			z.append('O');
-			c.append('X');
+			z.append(players[0].getSymbol());
+			c.append(players[1].getSymbol());
 		}
 
 		zero = z.toString();
@@ -72,13 +72,13 @@ public class Game {
 	}
 
 	public int getIndex() {
-
+		Scanner sc = new Scanner(System.in);
 		while (true) {
 
 			System.out.println("Player: " + players[turn].getName() + " give one position");
-			Scanner sc = new Scanner(System.in);
 
 			int pos = sc.nextInt() - 1;
+
 			int n = board.size;
 			int row = pos / n, col = pos % n;
 
